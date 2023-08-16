@@ -288,5 +288,5 @@ void testcase(int x, int y, int z, char dir, vector<char> vec, vector<string> an
 }
 
 int main(){
-
+  testcase(0, 0, 0, 'N', {'f', 'r', 'u', 'b', 'l'}, {"0", "1", "-1", "N"});
 }
