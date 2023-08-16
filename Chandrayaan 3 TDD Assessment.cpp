@@ -50,7 +50,102 @@ vector <string> execute(int x, int y, int z, char dir, vector<char> vec){
                     break;
                 }
             break;
-            
+            case 'l' :
+                switch(dir){
+                    case 'E':
+                        dir = f == 'U' ? 'S' : 'N';
+                    break;
+                    case 'W':
+                        dir = f == 'U' ? 'N' : 'S';
+                    break;
+                    case 'N':
+                        dir = f == 'U' ? 'E' : 'W';
+                    break;
+                    case 'S':
+                        dir = f == 'U' ? 'W' : 'E';
+                    break;
+                    case 'U':
+                        switch(f){
+                            case 'E':
+                                dir = 'N';
+                            break;
+                            case 'W':
+                                dir = 'S';
+                            break;
+                            case 'N':
+                                dir = 'W';
+                            break;
+                            case 'S':
+                                dir = 'E';
+                            break;
+                        }
+                    break;
+                    case 'D':
+                        switch(f){
+                            case 'E':
+                                dir = 'S';
+                            break;
+                            case 'W':
+                                dir = 'N';
+                            break;
+                            case 'N':
+                                dir = 'E';
+                            break;
+                            case 'S':
+                                dir = 'W';
+                            break;
+                        }
+                    break;
+                }
+            break;
+            case 'r' :
+                switch(dir){
+                    case 'E':
+                        dir = f == 'U' ? 'N' : 'S';
+                    break;
+                    case 'W':
+                        dir = f == 'U' ? 'S' : 'N';
+                    break;
+                    case 'N':
+                        dir = f == 'U' ? 'W' : 'E';
+                    break;
+                    case 'S':
+                        dir = f == 'U' ? 'E' : 'W';
+                    break;
+                    case 'U':
+                        switch(f){
+                            case 'E':
+                                dir = 'S';
+                            break;
+                            case 'W':
+                                dir = 'N';
+                            break;
+                            case 'N':
+                                dir = 'E';
+                            break;
+                            case 'S':
+                                dir = 'W';
+                            break;
+                        }
+                    break;
+                    case 'D':
+                        switch(f){
+                            case 'E':
+                                dir = 'N';
+                            break;
+                            case 'W':
+                                dir = 'S';
+                            break;
+                            case 'N':
+                                dir = 'W';
+                            break;
+                            case 'S':
+                                dir = 'E';
+                            break;
+                        }
+                    break;
+                }
+            break;
         }
     }
 }
