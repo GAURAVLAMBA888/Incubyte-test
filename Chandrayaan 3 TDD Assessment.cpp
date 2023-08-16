@@ -146,6 +146,126 @@ vector <string> execute(int x, int y, int z, char dir, vector<char> vec){
                     break;
                 }
             break;
+            case 'u' :
+                switch(dir){
+                    case 'E':
+                        f = 'E';
+                        dir = 'U';
+                    break;
+                    case 'W':
+                        f = 'W';
+                        dir = 'U';
+                    break;
+                    case 'N':
+                        f = 'N';
+                        dir = 'U';
+                    break;
+                    case 'S':
+                        f = 'S';
+                        dir = 'U';
+                    break;
+                    case 'U':
+                        switch(f){
+                            case 'E':
+                                dir = 'W';
+                                f = 'U';
+                            break;
+                            case 'W':
+                                dir = 'E';
+                                f = 'U';
+                            break;
+                            case 'N':
+                                dir = 'S';
+                                f = 'U';
+                            break;
+                            case 'S':
+                                dir = 'N';
+                                f = 'U';
+                            break;
+                        }
+                    break;
+                    case 'D':
+                        switch(f){
+                            case 'E':
+                                dir = 'W';
+                                f = 'D';
+                            break;
+                            case 'W':
+                                dir = 'E';
+                                f = 'D';
+                            break;
+                            case 'N':
+                                dir = 'S';
+                                f = 'D';
+                            break;
+                            case 'S':
+                                dir = 'N';
+                                f = 'D';
+                            break;
+                        }
+                    break;
+                }
+            break;
+            case 'd' :
+                switch(dir){
+                    case 'E':
+                        f = 'W';
+                        dir = 'D';
+                    break;
+                    case 'W':
+                        f = 'E';
+                        dir = 'D';
+                    break;
+                    case 'N':
+                        f = 'S';
+                        dir = 'D';
+                    break;
+                    case 'S':
+                        f = 'N';
+                        dir = 'D';
+                    break;
+                    case 'U':
+                        switch(f){
+                            case 'E':
+                                dir = 'E';
+                                f = 'D';
+                            break;
+                            case 'W':
+                                dir = 'W';
+                                f = 'D';
+                            break;
+                            case 'N':
+                                dir = 'N';
+                                f = 'D';
+                            break;
+                            case 'S':
+                                dir = 'S';
+                                f = 'D';
+                            break;
+                        }
+                    break;
+                    case 'D':
+                        switch(f){
+                            case 'E':
+                                dir = 'E';
+                                f = 'U';
+                            break;
+                            case 'W':
+                                dir = 'W';
+                                f = 'U';
+                            break;
+                            case 'N':
+                                dir = 'N';
+                                f = 'U';
+                            break;
+                            case 'S':
+                                dir = 'S';
+                                f = 'U';
+                            break;
+                        }
+                    break;
+                }
+            break;
         }
     }
 }
