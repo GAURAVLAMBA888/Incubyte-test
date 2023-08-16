@@ -276,6 +276,17 @@ vector <string> execute(int x, int y, int z, char dir, vector<char> vec){
     return res;
 }
 
+void testcase(int x, int y, int z, char dir, vector<char> vec, vector<string> ans){
+    vector<string> res = execute(x, y, z, dir, vec);
+
+    if(res == ans){
+        cout<<"Test Case Passed"<<endl;
+    }
+    else{
+        cout<<"Test Case Failed"<<endl;
+    }
+}
+
 int main(){
 
 }
