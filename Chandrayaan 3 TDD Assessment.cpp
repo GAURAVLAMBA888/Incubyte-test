@@ -289,4 +289,8 @@ void testcase(int x, int y, int z, char dir, vector<char> vec, vector<string> an
 
 int main(){
   testcase(0, 0, 0, 'N', {'f', 'r', 'u', 'b', 'l'}, {"0", "1", "-1", "N"});
+  testcase(0, 0, 0, 'N', {'f', 'f', 'b', 'b', 'b'}, {"0", "-1", "0", "N"});
+  testcase(1, 1, -1, 'N', {'r', 'r', 'r', 'r'}, {"1", "1", "-1", "N"});
+  testcase(0, 1, -1, 'N', {'f', 'f', 'f', 'f', 'f'}, {"0", "6", "-1", "N"});
+  testcase(0, 0, 2, 'N', {'f', 'r', 'f', 'l', 'f'}, {"1", "2", "2", "N"});
 }
