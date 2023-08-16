@@ -268,6 +268,12 @@ vector <string> execute(int x, int y, int z, char dir, vector<char> vec){
             break;
         }
     }
+    vector<string> res(4);
+    res[0] = to_string(x);
+    res[1] = to_string(y);
+    res[2] = to_string(z);
+    res[3] = dir;
+    return res;
 }
 
 int main(){
